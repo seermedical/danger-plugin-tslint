@@ -1,6 +1,6 @@
 {
-  "name": "danger-plugin-tslint",
-  "version": "0.0.0-development",
+  "name": "@seermedical/danger-plugin-tslint",
+  "version": "0.0.1",
   "description": "Danger plugin for TSLint",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,26 +17,25 @@
     "test": "jest --env=node",
     "danger": "danger",
     "docs": "typedoc --theme minimal --out docs src/index.ts",
-    "docs:serve": "npm run docs && serve docs",
     "docs:deploy": "npm run docs && node scripts/deploy-docs.js",
     "prepublish": "npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/macklinu/danger-plugin-tslint.git"
+    "url": "https://github.com/seermedical/danger-plugin-tslint.git"
   },
   "keywords": [
     "danger",
     "danger-plugin",
     "tslint"
   ],
-  "author": "Macklin Underdown <macklinu@gmail.com>",
+  "author": "Robert Kerr <rob@seermedical.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/macklinu/danger-plugin-tslint/issues"
+    "url": "https://github.com/seermedical/danger-plugin-tslint/issues"
   },
-  "homepage": "https://github.com/macklinu/danger-plugin-tslint#readme",
+  "homepage": "https://github.com/seermedical/danger-plugin-tslint#readme",
   "devDependencies": {
     "@types/common-tags": "^1.2.5",
     "@types/jest": "^21.1.2",
@@ -59,9 +58,7 @@
   "peerDependencies": {
     "tslint": "^5.0.0"
   },
-  "optionalDependencies": {
-    "serve": "^6.0.0"
-  },
+  "optionalDependencies": {},
   "jest": {
     "testRegex": ".*\\.test\\.ts$",
     "transform": {
